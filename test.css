@@ -1,0 +1,166 @@
+body{
+    background-image: url("images/screen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: inline-block;
+    width: 49%;
+    height: 5vh;
+    min-height: 39vw;
+    margin-top: 5%;
+    left: 24vw;
+    bottom: 0;
+    right: 0;
+    border-radius: 2.5vw;
+    position: relative;
+    overflow:scroll;
+}
+
+
+header{
+    text-align: center;
+    color: white;
+    font-family: VT323;
+    font-size: 5vh;
+    margin-top: 15px;
+}
+hr{
+    width: 20vw;
+    margin-bottom: 2vw;
+}
+
+.wrapper{
+    overflow-y: scroll;
+}
+
+/*PROJECT 1*/
+.p1{
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom:5vh;
+}
+.projectheader1{
+    color: white;
+    font-family: VT323;
+    font-size: 4vh;
+    text-align: center;
+}
+.aboutme{
+    color: white;
+    font-family: VT323;
+    font-size:2vh;
+    text-align: center;
+}
+.linkedin{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons{
+    height: auto;
+    width: 5vw;
+    margin-top: 1vh;
+    border: solid blue;
+}
+.icons:hover{
+    border:solid rgb(78, 131, 255);
+}
+
+/*PROJECT 2*/
+.p2{
+    text-align: center;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom:5vh;
+}
+.projectheader2{
+    color: white;
+    font-family: VT323;
+    font-size: 4vh;
+    text-align: center;
+}
+.weatherpic{
+    border-radius: 5vh;
+}
+.aboutweather{
+    color: white;
+    font-family: VT323;
+    font-size:2vh;
+    text-align: center;
+}
+
+/*PROJECT 3*/
+.p3{
+    text-align: center;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 5vh;
+}
+.projectheader3{
+    color: white;
+    font-family: VT323;
+    font-size: 4vh;
+    text-align: center;
+}
+.abouttodo{
+    color: white;
+    font-family: VT323;
+    font-size:2vh;
+    text-align: center;
+}
+
+/*PROJECT 4*/
+.p4{
+    text-align: center;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom:5vh;
+}
+.projectheader4{
+    color: white;
+    font-family: VT323;
+    font-size: 4vh;
+    text-align: center;
+}
+.abouttranslator{
+    color: white;
+    font-family: VT323;
+    font-size:2vh;
+    text-align: center;
+}
+
+
+.iwc{
+    display: flex;
+    justify-content: center;
+}
+.imgweather{
+    height:auto;
+    width:15vw;
+    border-radius: 3vw;
+    margin-top: 1vh;
+}
+
+.itodoc{
+    display: flex;
+    justify-content: center;
+}
+.imgtodo{
+    height:auto;
+    width:15vw;
+    border-radius: 3vw;
+    margin-top: 1vh;
+}
+
+.itranslatec{
+    display: flex;
+    justify-content: center;
+}
+.imgtranslate{
+    height:20vh;
+    width:auto;
+    border-radius: 2vw;
+    margin-top: 1vh;
+}

@@ -1,0 +1,122 @@
+body{
+    background-image: url("images/computer-wide.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -10px;
+}
+body.zoom{
+    transition: transform 5s ease-in forwards infinite;
+    animation: zooming 3.5s forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes zooming {
+    0% {
+        background-size: 100%;
+    }
+    100% {
+        background-size: 300%;
+        margin-top:-10px;
+        background-position-y: 20%;
+    }
+  }
+
+header{
+    font-family: VT323;
+    color:white;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 16%;
+}
+.container.invisible{
+    visibility: hidden;
+    opacity:0%;
+}
+
+.wrapper{
+    display:inline-block;
+}
+
+.intro{
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+        animation: 
+        typing 3.5s steps(40, end),
+        .75s step-end infinite;
+}
+
+
+.clickhere{
+    visibility: hidden;
+    animation: invisible 0s ease-in 4s forwards,
+    blinker 1.7s linear infinite;
+}
+
+.clickhere:hover{
+    cursor: pointer;
+    animation: none;
+    visibility: visible;
+    
+}
+.clickhere:active{
+    color:rgb(161, 161, 161);
+}
+.clickhere.zoom{
+    visibility: hidden;
+}
+
+.imgcontainer{
+    display: flex;
+}
+.screen{
+    position: absolute;
+    display: flex;
+    left: 39.44vw;
+    width: 20.49vw;
+    margin-top: -11.25%;;
+    visibility: hidden;
+}
+
+.screen.zoom{
+    visibility: visible;
+    transition: transform 2.5s ease-in-out;
+    transform: scale(2.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -25px;
+    border-radius: 10px;
+    
+}
+
+/*KEY FRAMES*/
+/* intro */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+/*clickhere*/
+@keyframes invisible{
+    to {
+        visibility: visible;
+    }
+ }
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
